@@ -20,4 +20,10 @@ permissions:
 
 jobs:
   workflows:
+    permissions:
+      actions: read
+      contents: write
+      pull-requests: read
+      packages: read
+      security-events: write
     uses: hassio-addons/workflows/.github/workflows/addon-ci.yaml@main
