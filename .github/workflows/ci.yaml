@@ -14,7 +14,7 @@ on:
 permissions:
   actions: read
   contents: write
-  pull-requests: read
+  pull-requests: write
   packages: read
   security-events: write
 
@@ -23,7 +23,7 @@ jobs:
     permissions:
       actions: read
       contents: write
-      pull-requests: read
+      pull-requests: write
       packages: read
       security-events: write
     uses: hassio-addons/workflows/.github/workflows/addon-ci.yaml@main
